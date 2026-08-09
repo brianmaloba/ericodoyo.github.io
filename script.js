@@ -6,7 +6,7 @@ menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
 
-const hero = document.getElementById("hero");
+const hero = document.getElementById("home");
 
 const backgrounds = [
     "image/hero1.png",
