@@ -212,88 +212,175 @@ section h2{
     font-size:18px;
 }
 
-/* Services Section */
+/* =========================
+   SERVICES SECTION
+========================= */
+
 .services {
-    padding: 80px 8%;
-    background: #f8fafc;
+    padding: 90px 6%;
+    background: linear-gradient(rgba(255,255,255,0.85),rgba(0,0,0.75)),
+    url("images/body.png");
+    text-align: center;
 }
 
 .services h2 {
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.services-intro {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto 45px;
-    color: #666;
-}
-
-/* Service Cards */
-.service-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-}
-
-.service-card {
+    font-size: 38px;
+    font-weight: 700;
+    color: #172033;
+    margin-bottom: 50px;
     position: relative;
-    background: #fff;
-    padding: 35px 25px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    overflow: hidden;
+}
 
-    /* Animation */
+/* Small line under heading */
+.services h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #0d6efd;
+    margin: 15px auto 0;
+    border-radius: 10px;
+}
+
+/* Cards container */
+.cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+/* Individual card */
+.card {
+    background: #ffffff;
+    padding: 35px 28px;
+    border-radius: 16px;
+    border: 1px solid #e8ecf2;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 300px;
+
     transition:
         transform 0.35s ease,
-        box-shadow 0.35s ease;
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
 }
 
-/* Accent line */
-.service-card::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 4px;
-    background: #007bff;
-    transition: width 0.35s ease;
-}
-
-/* Hover effect */
-.service-card:hover {
+/* Card hover animation */
+.card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    border-color: #0d6efd;
 }
 
-.service-card:hover::before {
-    width: 100%;
+/* Service icon */
+.card i {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eaf2ff;
+    color: #0d6efd;
+
+    font-size: 30px;
+
+    border-radius: 50%;
+    margin-bottom: 22px;
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        color 0.35s ease;
 }
 
-/* Service Icon */
-.service-card i {
-    font-size: 42px;
-    color: #007bff;
-    margin-bottom: 20px;
-    transition: transform 0.35s ease;
+/* Icon hover */
+.card:hover i {
+    transform: scale(1.1) rotate(3deg);
+    background: #0d6efd;
+    color: #ffffff;
 }
 
-.service-card:hover i {
-    transform: translateY(-6px) scale(1.08);
-}
-
-.service-card h3 {
-    margin-bottom: 12px;
+/* Card heading */
+.card h3 {
     font-size: 21px;
+    color: #172033;
+    margin: 0 0 15px;
+    font-weight: 700;
 }
 
-.service-card p {
-    color: #666;
+/* Card paragraph */
+.card p {
+    font-size: 15.5px;
     line-height: 1.7;
+    color: #667085;
+    margin: 0;
+    max-width: 330px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablets */
+@media (max-width: 900px) {
+
+    .services {
+        padding: 75px 5%;
+    }
+
+    .services h2 {
+        font-size: 34px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+
+    .services {
+        padding: 60px 20px;
+    }
+
+    .services h2 {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        padding: 30px 22px;
+        min-height: auto;
+    }
+
+    .card i {
+        width: 65px;
+        height: 65px;
+        font-size: 27px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 15px;
+    }
 }
 
 /* ===============================
@@ -532,7 +619,9 @@ button[type="submit"]:hover {
 
 .who-we-help {
     padding: 80px 8%;
-    background: #f7f9fc;
+    background:
+    linear-gradient(rgba(255,255,255,0.85),rgba(0,0,0.75)),
+    url("images/who.png");
     text-align: center;
 }
 
