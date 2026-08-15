@@ -429,7 +429,7 @@ section h2{
 
 .testimonials{
     background:
-    linear-gradient(rgba(255,255,255,0.85),rgba(0,0,0.75)),
+    linear-gradient(rgba(255,255,255,0.75),rgba(0,0,0.75)),
     url("images/testi.png");
     background-size:cover;
     background-position:center;
@@ -464,7 +464,7 @@ section h2{
 /* BOOK / CONTACT SECTION */
 .booking-contact {
     padding: 80px 8%;
-    background-image: linear-gradient(90deg,rgba(255,255,255,0.85)
+    background-image: linear-gradient(90deg,rgba(255,255,255,0.75)
     ,rgba(255,255,255,0.35)), url("images/booking.png");
     background-size: cover;
     background-position: center;
@@ -620,7 +620,7 @@ button[type="submit"]:hover {
 .who-we-help {
     padding: 80px 8%;
     background:
-    linear-gradient(rgba(255,255,255,0.85),rgba(0,0,0.75)),
+    linear-gradient(rgba(255,255,255,0.75),rgba(0,0,0.75)),
     url("images/who.png");
     text-align: center;
 }
@@ -628,7 +628,7 @@ button[type="submit"]:hover {
 .who-we-help h2 {
     font-size: 2.5rem;
     margin-bottom: 15px;
-    color: white;
+    color: black;
     position: relative;
 }
 
@@ -636,7 +636,7 @@ button[type="submit"]:hover {
 .who-we-help h2::after {
     content: "";
     display: block;
-    width: 60px;
+    width: 10px;
     height: 4px;
     background: green;
     margin: 15px auto 25px;
@@ -648,7 +648,8 @@ button[type="submit"]:hover {
     margin: 0 auto 50px;
     font-size: 1.05rem;
     line-height: 1.7;
-    color: #555;
+    color: black;
+    font: size 15px;
 }
 
 /* Cards container */
@@ -680,7 +681,7 @@ button[type="submit"]:hover {
 /* Card heading */
 .help-card h3 {
     font-size: 1.4rem;
-    color: #0b1f3a;
+    color: black;
     margin-bottom: 15px;
 }
 
@@ -688,7 +689,7 @@ button[type="submit"]:hover {
 .help-card p {
     font-size: 0.98rem;
     line-height: 1.7;
-    color: #666;
+    color: black;
     margin: 0;
 }
 
