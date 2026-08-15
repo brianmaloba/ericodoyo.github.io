@@ -134,6 +134,13 @@ nav{
     transform:translateY(-12px) rotate(-45deg);
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 /* ===============================
    HERO
 ================================== */
