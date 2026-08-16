@@ -190,6 +190,37 @@ nav{
     background: #3a9a3a;
     transform: translateY(-3px);
 }
+
+.whatsapp-float {
+    position: fixed;
+    top: 90px;
+    right: 20px;
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #25D366;
+    color: white;
+
+    border-radius: 50%;
+    font-size: 30px;
+
+    text-decoration: none;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+    z-index: 9999;
+
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
 /* ===============================
    GENERAL SECTIONS
 ================================== */
